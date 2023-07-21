@@ -4,54 +4,147 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <h1>青木俊輔</h1>
-    <h2>東京工業大学情報理工学院情報工学系卒業</h2>
-    <h3>成果物</h3>
-    <dl>
-      <dt><a href="https://anime-sq3h.onrender.com">3Dアニメーション</a></dt>
-      <dd>CSSの基礎学習。CSSを用いてパラパラ漫画を作成した。</dd>
-      <dt><a href="https://link-like-ui.onrender.com">ホーム画面</a></dt>
-      <dd>
-        ゲームのホーム画面のUIを、HTMLとCSSのみを用いて再現することに挑戦した。
-      </dd>
-      <dt><a href="https://modules.onrender.com">CSSモジュール</a></dt>
-      <dd>
-        CSS設計の勉強もかねて、CSS設計完全ガイドという書籍を参考にモジュールを作成。
-        書籍ではPCファーストだったところを、モバイルファーストで書き直した。
-      </dd>
-      <dt><a href="https://timer-wrvw.onrender.com">タイマー</a></dt>
-      <dd>Reactを用いたタイマーアプリ。一時停止機能とラップ機能を搭載。</dd>
-      <dt>
-        <a href="https://note-app-with-react.onrender.com">ノートアプリ</a>
-      </dt>
-      <dd>
-        Reactを用いたノートアプリ。更新日順ソートやマークアップなど様々な機能を実装した。
-      </dd>
-      <dt><a href="https://todo-caue.onrender.com">Todoアプリ</a></dt>
-      <dd>
-        Djangoを用いてTodoアプリケーションを制作した。CRUD操作が一通りできるようになった。
-        また、タグ付け機能を実装するなど工夫をした。
-      </dd>
-    </dl>
-    <p>
-      ※その他、ソースコードが残っていませんが、学生時代、Javaを用いてブロック崩しゲームやタイピングゲームを制作するなどしました。
-    </p>
-    <h3>使える言語/技術/フレームワーク</h3>
-    <ul>
-      <li>C</li>
-      <li>C++</li>
-      <li>Java</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>TypeScript</li>
-      <li>Python</li>
-      <li>Ruby</li>
-      <li>Git</li>
-      <li>React</li>
-    </ul>
-    <p>※どれも基礎的なレベルです。</p>
+    <header class="header">
+      <div class="header__inner">
+        <h1 class="header__logo">
+          <img
+            class="header__icon"
+            src="images/icon.png"
+            alt="自画像"
+          />Portfolio
+        </h1>
+        <ul class="header__items">
+          <li class="header__item">
+            <a class="header__link" href="/index.html">MY WORKS</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="/about.html">ABOUT ME</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <h1 class="main-title">
+      <span class="slide-title">MY WORKS</span>
+      <span class="slide-bar"></span>
+    </h1>
+    <main class="container">
+      <ul>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/3d.png" alt="" />
+          </div>
+          <div class="items__body">
+            <a class="item__link" href="https://anime-sq3h.onrender.com">
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>3Dアニメーション
+              </h3>
+            </a>
+            <p class="item__text">
+              CSSの基礎学習。CSSを用いてパラパラ漫画を作成した。
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/smartphone.png" alt="" />
+          </div>
+          <div class="items__body">
+            <a class="item__link" href="https://link-like-ui.onrender.com">
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>ホーム画面
+              </h3>
+            </a>
+            <p class="item__text">
+              ゲームのホーム画面のUIを、HTMLとCSSのみを用いて再現することに挑戦した。
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/css.jpg" alt="" />
+          </div>
+          <div class="items__body">
+            <a class="item__link" href="https://modules.onrender.com">
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>CSSモジュール
+              </h3>
+            </a>
+            <p class="item__text">
+              CSS設計の勉強もかねて、CSS設計完全ガイドという書籍を参考にモジュールを作成。
+              書籍ではPCファーストだったところを、モバイルファーストで書き直した。
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/timer.jpeg" alt="" />
+          </div>
+          <div class="items__body">
+            <a class="item__link" href="https://timer-wrvw.onrender.com">
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>タイマーアプリ
+              </h3>
+            </a>
+            <p class="item__text">
+              Reactを用いたタイマーアプリ。一時停止機能とラップ機能を搭載。
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/note.jpg" alt="" />
+          </div>
+          <div class="items__body">
+            <a
+              class="item__link"
+              href="https://note-app-with-react.onrender.com"
+            >
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>ノートアプリ
+              </h3>
+            </a>
+            <p class="item__text">
+              Reactを用いたノートアプリ。更新日順ソートやマークアップなど様々な機能を実装した。
+            </p>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item__image-container">
+            <img src="images/todo.png" alt="" />
+          </div>
+          <div class="items__body">
+            <a class="item__link" href="https://todo-caue.onrender.com">
+              <h3 class="item__title">
+                <i class="fa-solid fa-link"></i>Todoアプリ
+              </h3>
+            </a>
+            <p class="item__text">
+              Djangoを用いてTodoアプリケーションを制作した。CRUD操作が一通りできるようになった。
+              また、タグ付け機能を実装するなど工夫をした。
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <p class="comment">
+        ※その他、ソースコードが残っていませんが、学生時代、Javaを用いてブロック崩しゲームやタイピングゲームを制作するなどしました。
+      </p>
+    </main>
+
+    <script
+      src="https://kit.fontawesome.com/7af24d0126.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
