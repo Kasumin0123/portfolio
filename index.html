@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,8 +33,23 @@
             <a class="header__link" href="/about.html">ABOUT ME</a>
           </li>
         </ul>
+        <button class="header__button toggle-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
     </header>
+    <div class="mobile-menu">
+      <ul class="mobile-menu__items">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/index.html">MY WORKS</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="/about.html">ABOUT ME</a>
+        </li>
+      </ul>
+    </div>
     <h1 class="main-title">
       <span class="slide-title">MY WORKS</span>
       <span class="slide-bar"></span>
@@ -42,7 +60,7 @@
           <div class="item__image-container">
             <img src="images/3d.png" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a class="item__link" href="https://anime-sq3h.onrender.com">
               <h3 class="item__title">
                 <i class="fa-solid fa-link"></i>3Dアニメーション
@@ -57,7 +75,7 @@
           <div class="item__image-container">
             <img src="images/smartphone.png" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a class="item__link" href="https://link-like-ui.onrender.com">
               <h3 class="item__title">
                 <i class="fa-solid fa-link"></i>ホーム画面
@@ -72,7 +90,7 @@
           <div class="item__image-container">
             <img src="images/css.jpg" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a class="item__link" href="https://modules.onrender.com">
               <h3 class="item__title">
                 <i class="fa-solid fa-link"></i>CSSモジュール
@@ -88,7 +106,7 @@
           <div class="item__image-container">
             <img src="images/timer.jpeg" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a class="item__link" href="https://timer-wrvw.onrender.com">
               <h3 class="item__title">
                 <i class="fa-solid fa-link"></i>タイマーアプリ
@@ -103,7 +121,7 @@
           <div class="item__image-container">
             <img src="images/note.jpg" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a
               class="item__link"
               href="https://note-app-with-react.onrender.com"
@@ -121,7 +139,7 @@
           <div class="item__image-container">
             <img src="images/todo.png" alt="" />
           </div>
-          <div class="items__body">
+          <div class="item__body">
             <a class="item__link" href="https://todo-caue.onrender.com">
               <h3 class="item__title">
                 <i class="fa-solid fa-link"></i>Todoアプリ

@@ -36,4 +36,8 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { rootMargin: '-100px 0px -100px 0px' },
   )
+  const btn = document.querySelector('.toggle-icon')
+  btn.addEventListener('click', () => {
+    document.querySelector('body').classList.toggle('menu-open')
+  })
 })
