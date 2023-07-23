@@ -442,6 +442,8 @@ section {
 
 .profile__img-container {
   width: 30%;
+  aspect-ratio: 1/1;
+  height: auto;
   margin: 0 auto;
   display: flex;
   align-items: center;
