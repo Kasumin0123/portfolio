@@ -31,11 +31,27 @@ body {
     justify-content: space-between;
   }
   &__logo {
+    height: 100%;
+    padding: 0 10px;
+    position: relative;
+    text-decoration: none;
     display: flex;
     align-items: center;
     font-size: 36px;
     font-weight: bold;
     color: $cLogoColor;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    &:hover::before {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
   }
   &__icon {
     height: 60px;
@@ -43,6 +59,7 @@ body {
     margin: 0 0.5em;
   }
   &__items {
+    height: 100%;
     display: flex;
     align-items: center;
     @media screen and (max-width: 600px) {
@@ -51,12 +68,31 @@ body {
   }
   &__item {
     margin-right: 30px;
+    height: 100%;
   }
   &__link {
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
     text-decoration: none;
     font-size: 1.4em;
     font-weight: 500;
     color: $cLogoColor;
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0%;
+      left: 0%;
+    }
+    &:hover::before {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
   }
   &__button {
     background-color: transparent;
