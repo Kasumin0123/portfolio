@@ -415,7 +415,7 @@ section {
   gap: 20px;
   align-items: start;
   height: auto;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 .item:nth-child(even) {
   transform: translateX(-50%);
@@ -436,6 +436,8 @@ section {
 }
 .item__link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 24px;
   color: #f98866;
 }
 .item__link i {
@@ -448,7 +450,6 @@ section {
   margin-bottom: 0;
 }
 .item__title {
-  margin-bottom: 20px;
   font-size: 1.6em;
   font-weight: bold;
 }
